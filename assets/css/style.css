@@ -1,3 +1,22 @@
 body {
-    background-color: darkgreen;
+    background-color: #ddddd;
+    font-family: 'Open Sans', 'Times New Roman', Times, serif;;
+    font-size: 12pt: 
+}
+
+
+h1 {
+    font-family: font-family: 'Permanent Marker', sans-serif;
+    font-size: 20pt;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: disc; /* restores the bullet for line items */  
+    list-style-position: outside;
+}
+
+p, ul, li {
+    line-height: 170%;
+    margin-bottom: 1em; /* restores spacing after the tag */
 }
