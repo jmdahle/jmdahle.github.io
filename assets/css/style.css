@@ -19,10 +19,3 @@ p, ul, li {
     line-height: 170%;
     margin-bottom: 1em; /* restores spacing after the tag */
 }
-
-
-
-.mainbody {
-    border-left: 2px solid #aaaaaa;
-    padding-left: 4px;
-}
