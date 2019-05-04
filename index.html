@@ -11,54 +11,114 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>J M Dahle Live!</title>
+    <title>John Dahle</title>
 </head>
 
 <body>
-    <div class="container mainbody">
-        <h1>Live Repositories</h1>
-        <!-- #1 Project -->
-        <div class="media">
-            <img src="./assets/images/Basic-Portfolio-thumb.png" class="mr-3 border" alt="Basic-Portfolio">
-            <div class="media-body">
-                <h5 class="mt-0">
-                    <span class="badge badge-primary">New</span>
-                    Basic-Portfolio
-                    <a class="d-inline-flex nav-link text-secondary" href="./Basic-Portfolio/index.html">Link</a>
-                </h5>
-                An early exercise in separating markup from styling and working on CSS layout and positioning. Initially
-                completed 2019-04-27.
+    <header>
+        <div id="title-container" class="container pl-0 pr-0">
+            <div class="row">
+                <div class="col-auto mr-auto">
+                    <h1 id="title-section">John Dahle</h1>
+                </div>
+                <div class="col-auto">
+                    <!-- <nav class="navbar navbar-expand-md navbar-light bg-white justify-content-end">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="./index.html">About<span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav> -->
+                </div>
             </div>
         </div>
-        <hr>
-        <!-- #2 Project -->
-        <div class="media">
-            <img src="./assets/images/Bootstrap-Portfolio-thumb.png" class="mr-3 border" alt="Bootstrap-Portfolio">
-            <div class="media-body">
-                <h5 class="mt-0">
-                    <span class="badge badge-warning">Incomplete</span>
-                    Bootstrap-Portfolio
-                    <a class="d-inline-flex nav-link text-secondary" href="./Bootstrap-Portfolio/index.html">Link</a>
-                </h5>
-                Repeating the Basic-Portfolio exercise using Bootstrap, resulting in a responsive page.
-            </div>
-        </div>
-        <hr>
-        <!-- #3 Project -->
-        <div class="media">
-            <img src="./assets/images/Responsive-Portfolio-thumb.png" class="mr-3 border" alt="Responsive-Portfolio">
-                <div class="media-body">
+    </header>
+    <main>
+        <div class="container">
+            <h1>Live Repositories</h1>
+            <!-- #1 Project -->
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="./assets/images/Basic-Portfolio-thumb.png" class="mr-3 border" alt="Basic-Portfolio">
+                </div>
+                <div class="col-md-7">
                     <h5 class="mt-0">
-                        <span class="badge badge-warning">Incomplete</span>
+                        <span class="badge badge-success">Complete</span>
+                        Basic-Portfolio
+                        <a class="d-inline-flex nav-link text-primary" href="./Basic-Portfolio/index.html">Link</a>
+                    </h5>
+                    An early exercise in separating markup from styling and working on CSS layout and positioning.
+                    Initially
+                    completed 2019-04-27.
+                </div>
+            </div>
+            <hr>
+            <!-- #2 Project -->
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="./assets/images/Bootstrap-Portfolio-thumb.png" class="mr-3 border"
+                        alt="Bootstrap-Portfolio">
+                </div>
+                <div class="col-md-7">
+                    <h5 class="mt-0">
+                        <span class="badge badge-primary">New</span>
+                        Bootstrap-Portfolio
+                        <a class="d-inline-flex nav-link text-primary"
+                            href="./Bootstrap-Portfolio/index.html">Link</a>
+                    </h5>
+                    Repeating the Basic-Portfolio exercise using Bootstrap, resulting in a responsive page.
+                </div>
+            </div>
+            <hr>
+            <!-- #3 Project -->
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="./assets/images/Responsive-Portfolio-thumb.png" class="mr-3 border"
+                        alt="Responsive-Portfolio">
+                </div>
+                <div class="col-md-7">
+                    <h5 class="mt-0">
+                        <span class="badge badge-primary">New</span>
                         Responsive-Portfolio
-                        <a class="d-inline-flex nav-link text-secondary" href="./Responsive-Portfolio/index.html">Link</a>
+                        <a class="d-inline-flex nav-link text-primary"
+                            href="./Responsive-Portfolio/index.html">Link</a>
                     </h5>
                     Repeating the Basic-Portfolio exercise using @media CSS to create a responsive page.
                 </div>
             </div>
-        </div>    
-    </div>
-
+            <hr>
+            <!-- #4 Project -->
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="http:/lorempixel.com/300/300" class="mr-3 border" alt="Project Image">
+                </div>
+                <div class="col-md-7">
+                    <h5 class="mt-0">
+                        <span class="badge badge-warning">Incomplete</span>
+                        Word Game - Hangman!
+                        <a class="d-inline-flex nav-link text-primary" href="#">Link</a>
+                    </h5>
+                    A hangman-style word game incorporating javascript.
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
