@@ -4,6 +4,10 @@ body {
     font-size: 14pt;
 }
 
+img {
+    width: 300px;
+}
+
 h1 {
     font-family: 'Permanent Marker', sans-serif;
     font-size: 40pt;
