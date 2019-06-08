@@ -10,3 +10,6 @@ $("#spotifyLogin").on("click", function() {
     var combinedUrl = url + "client_id=" + clientId + "&redirect_uri=" + returnUrl + "&scope=" + scopes + "&response_type=token";
     console.log(combinedUrl);
 })
+
+var qs = location.hash;
+console.log("hash",qs);
