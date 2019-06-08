@@ -30,4 +30,3 @@ if (responseSpotify.length > 0) {
         }
     });
 }
-
