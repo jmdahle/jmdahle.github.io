@@ -13,5 +13,20 @@ $("#spotifyLogin").on("click", function() {
     $("#linkhere").html("<a href='"+combinedUrl + "'>Login To Spotify</a>");
 })
 
-var qs = location.hash;
-console.log("hash",qs);
+var responseSpotify = location.hash;
+if (responseSpotify.length > 0) {
+    var s = responseSpotify.indexOf("#access_token=") + "#access_token".length + 1;
+    var e = responseSpotify.indexOf("&");
+    var SpotifyToken = responseSpotify.substring(s,e);
+    console.log("token",SpotifyToken);
+
+    $.ajax({
+        url: "https://api.spotify.com/v1/search?q=Ariana+Grande&type=playlist",
+        headers: {
+            "Authorization": "Bearer " + spotifyToken
+        },
+        success: function(response) {
+            console.log(response);
+        }
+}
+
