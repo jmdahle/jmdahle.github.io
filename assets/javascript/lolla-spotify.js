@@ -17,8 +17,8 @@ var responseSpotify = location.hash;
 if (responseSpotify.length > 0) {
     var s = responseSpotify.indexOf("#access_token=") + "#access_token".length + 1;
     var e = responseSpotify.indexOf("&");
-    var SpotifyToken = responseSpotify.substring(s,e);
-    console.log("token",SpotifyToken);
+    var spotifyToken = responseSpotify.substring(s,e);
+    console.log("token",spotifyToken);
 
     $.ajax({
         url: "https://api.spotify.com/v1/search?q=Ariana+Grande&type=playlist",
