@@ -28,6 +28,6 @@ if (responseSpotify.length > 0) {
         success: function(response) {
             console.log(response);
         }
-    }
+    });
 }
 
