@@ -28,24 +28,23 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
         success: function(response) {
             // dynamically add the playlists to the page
             console.log(response);
-/*            for (var pl = 0; pl < response.playlists.items.length; pl++) {
-                plName = response.playlists.items[pl].name;
-                plLink = response.playlists.items[pl].external_urls.spotify;
-                plImage = response.playlists.items[pl].images[0].url;
-                var newDiv = $("<div>");
-                var newImg = $("<img>");
-                var newP = $("<p>");
-                newImg.attr("src",plImage);
-                newImg.attr("alt","PlayListImage");
-                newImg.attr("class","playlist");
-                newImg.attr("data-external-link",plLink);
-                newP.text(plName);
-                newDiv.append(newImg);
-                newDiv.append(newP);
-                $("#playlists").append(newDiv);
-            }
-            // if any playlist is clicked, open it in a new page
-            $(".playlist").on("click", function() {
+            artistName = response.artists.items[0].name;
+            artistId = response.artists.items[0].id;
+            artistImg = response.artists.items[0].images[0].url;
+            artistUrl = response.artists.items[0].external_urls.spotify;
+            var newDiv = $("<div>");
+            var newImg = $("<img>");
+            var newP = $("<p>");
+            newImg.attr("src",artistImg);
+            newImg.attr("alt","ArtistImage");
+            newImg.attr("class","artist");
+            newImg.attr("data-external-link",artistUrl);
+            newP.text(artistName);
+            newDiv.append(newImg);
+            newDiv.append(newP);
+            $("#artistInfo").append(newDiv);
+            // if any artist is clicked, open it in a new page
+            $(".artist").on("click", function() {
                 var url = $(this).attr("data-external-link");
                 window.open(url, "_blank");
             });*/
