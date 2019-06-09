@@ -53,7 +53,7 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
 
     // ajax call for top tracks using artist ID and access token
     $.ajax({
-        url: "Endpoint	https://api.spotify.com/v1/artists/" = artistID + "/top-tracks",
+        url: "Endpoint	https://api.spotify.com/v1/artists/" + artistId + "/top-tracks",
         headers: {
             "Authorization": "Bearer " + spotifyToken
         },
