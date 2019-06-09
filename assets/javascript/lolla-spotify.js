@@ -47,7 +47,7 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
             $(".artist").on("click", function() {
                 var url = $(this).attr("data-external-link");
                 window.open(url, "_blank");
-            });*/
+            });
         }
     });
 }
