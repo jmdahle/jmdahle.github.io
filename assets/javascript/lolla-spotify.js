@@ -31,17 +31,17 @@ if (responseSpotify.length > 0) {
                 plName = response.playlists.items[pl].name;
                 plLink = response.playlists.items[pl].external_urls.spotify;
                 plImage = response.playlists.items[pl].images[0].url;
-                var newPl = $("<div>");
-                var newPlImage = $("<img>");
-                var newPlName = $("<p>");
-                newPlImage.attr("src",PlImage);
-                newPlImage.attr("alt","PlayListImage");
-                newPlImage.attr("class","playlist");
-                newPlImage.attr("data-external-link",PlLink);
-                newPlName.text(PlName);
-                newPl.append(PlImage);
-                newPl.append(PlName);
-                $("#playlists").append(newPl);
+                var newDiv = $("<div>");
+                var newImg = $("<img>");
+                var newP = $("<p>");
+                newImg.attr("src",plImage);
+                newImg.attr("alt","PlayListImage");
+                newImg.attr("class","playlist");
+                newImg.attr("data-external-link",plLink);
+                newP.text(plName);
+                newDiv.append(newImg);
+                newDiv.append(newP);
+                $("#playlists").append(newDiv);
             }
         }
     });
