@@ -27,10 +27,10 @@ if (responseSpotify.length > 0) {
         },
         success: function(response) {
             console.log(response);
-            for (var pl = 0; pl < response.items.length; pl++) {
-                plName = response.items[pl].name;
-                plLink = response.items[pl].external_urls.spotify;
-                plImage = response.items[pl].images[0].url;
+            for (var pl = 0; pl < response.playlists.items.length; pl++) {
+                plName = response.playlists.items[pl].name;
+                plLink = response.playlists.items[pl].external_urls.spotify;
+                plImage = response.playlists.items[pl].images[0].url;
                 var newPl = $("<div>");
                 var newPlImage = $("<img>");
                 var newPlName = $("<p>");
