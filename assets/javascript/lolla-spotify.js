@@ -27,6 +27,22 @@ if (responseSpotify.length > 0) {
         },
         success: function(response) {
             console.log(response);
+            for (var pl = 0; pl < response.items.length; pl++) {
+                plName = response.items[pl].name;
+                plLink = response.items[pl].external_urls.spotify;
+                plImage = response.items[pl].images[0].url;
+                var newPl = $("<div>");
+                var newPlImage = $("<img>");
+                var newPlName = $("<p>");
+                newPlImage.attr("src",PlImage);
+                newPlImage.attr("alt","PlayListImage");
+                newPlImage.attr("class","playlist");
+                newPlImage.attr("data-external-link",PlLink);
+                newPlName.text(PlName);
+                newPl.append(PlImage);
+                newPl.append(PlName);
+                $("#playlists").append(newPl);
+            }
         }
     });
 }
