@@ -21,14 +21,14 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
     console.log("token",spotifyToken);
     // use the token to get playlists for an artist
     $.ajax({
-        url: "https://api.spotify.com/v1/search?q=Ariana+Grande&type=playlist",
+        url: "https://api.spotify.com/v1/search?q=Ariana+Grande&type=artist",
         headers: {
             "Authorization": "Bearer " + spotifyToken
         },
         success: function(response) {
             // dynamically add the playlists to the page
             console.log(response);
-            for (var pl = 0; pl < response.playlists.items.length; pl++) {
+/*            for (var pl = 0; pl < response.playlists.items.length; pl++) {
                 plName = response.playlists.items[pl].name;
                 plLink = response.playlists.items[pl].external_urls.spotify;
                 plImage = response.playlists.items[pl].images[0].url;
@@ -48,7 +48,7 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
             $(".playlist").on("click", function() {
                 var url = $(this).attr("data-external-link");
                 window.open(url, "_blank");
-            });
+            });*/
         }
     });
 }
