@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing Spotify Login</title>
+</head>
+<body>
+    <h1>Spotify API Test</h1>
+    <h2>Testing recommendation</h2>
+    <p>Authentication can only (to my knowledge) take place on a published website (like github pages) since it requires a <code>redirect</code>.  It will NOT work properly using Live Server or by just opening the local copy on your computer.</p>
+    <p>So... to demonstrate it, I have placed this file and the included js code (spot.js) at: <a href="">this link</a>.</p>
+    <h2>Notes</h2>
+    <p>Click the button to authenticate; it will return to this page afterward with an <code>access_token</code> that is used in subsequent API calls.</p>
+    <button id="spotifyLogin">Login to Spotify</button>
+    <h3>Atrist Search</h3>
+    <p>Atrist search JSON data is logged to the console.</p>
+    <p>This is an artist search example specific to 'Ariana Grande'.  The actual search would be based on the artist selected from the TM list of all (filtered) artists.</p>
+    <p>Below is data selected from the JSON data returned from the atrist search end point <code>https://api.spotify.com/v1/search?q=Ariana+Grande&type=artist</code></p>
+    <div id="artistInfo"></div>
+
+    <h3>Playlist</h3>
+    <div id="artistPlaylists"></div>
+
+    <h3>Top Tracks</h3>
+    <div id="artistTopTracks"></div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./assets/javascript/spot.js"></script>
+</body>
+</html>

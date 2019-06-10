@@ -44,13 +44,24 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
             var newDiv = $("<div>");
             var newImg = $("<img>");
             var newP = $("<p>");
+            var newBtnPlaylist = $("<button>");
+            newBtnPlaylist.text("Get Playlist");
+            newBtnPlaylist.attr("id","btnGetPlaylist");
+            var newBtnTopTracks = $("<button>");
+            newBtnTopTracks.text("Get Top Tracks");
+            newBtnTopTracks.attr("id","btnGetTopTracks");
             newImg.attr("src", artistImg);
             newImg.attr("alt", "ArtistImage");
             newImg.attr("class", "artist");
+            newImg.attr("style","width: 200px");
             newImg.attr("data-external-link", artistUrl);
             newP.text(artistName);
             newDiv.append(newImg);
             newDiv.append(newP);
+            newDiv.append(newBtnPlaylist);
+            newDiv.append(newBtnTopTracks);
+            $("#btnGetPlaylist").on("click", getPlayList);
+            $("#btnGetTopTracks").on("click", getTopTracks);
             $("#artistInfo").append(newDiv);
             // if any artist is clicked, open it in a new page
             $(".artist").on("click", function () {
@@ -60,14 +71,30 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
         }
     });
 
+}
+
+function getPlayList() {
+    // ajax call for playlists featuring this artist
+    $.ajax({
+        url: "https://api.spotify.com/v1/search?q=Ariana+Grande&type=playlist",
+        headers: {
+            "Authorization": "Bearer " + spotifyToken
+        },
+        success: function (r2) {
+            console.log(r2);
+        }
+    });
+}
+
+function getTopTracks() {
     // ajax call for top tracks using artist ID and access token
     $.ajax({
         url: "https://api.spotify.com/v1/artists/" + artistId + "/top-tracks?country=US",
         headers: {
             "Authorization": "Bearer " + spotifyToken
         },
-        success: function (r2) {
-            console.log(r2);
+        success: function (r3) {
+            console.log(r3);
 
         }
     });
