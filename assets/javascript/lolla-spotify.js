@@ -1,6 +1,14 @@
 // Spotify API
 // use to retrieve song information
 
+//global variables
+var spotifyToken = ""; // access_token received after authentication
+var artistName = ""; // populated by API call 
+var artistId = ""; // populated by initial API search, used to get top tracks
+var artistImg = ""; // populated by initial API search, url used in artist IMG tag
+var artistUrl = ""; // populated by initial API search, url used to open a spotify page with the artist
+
+
 $("#spotifyLogin").on("click", function () {
     // opens the spotify login and returns with a token
     var url = "https://accounts.spotify.com/authorize?";
@@ -17,7 +25,7 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
     // parse the returned "hash" to extract the access token only
     var s = responseSpotify.indexOf("#access_token=") + "#access_token".length + 1;
     var e = responseSpotify.indexOf("&");
-    var spotifyToken = responseSpotify.substring(s, e);
+    spotifyToken = responseSpotify.substring(s, e);
     console.log("token", spotifyToken);
     // use the token to get playlists for an artist
     $.ajax({
