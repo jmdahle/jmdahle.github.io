@@ -9,6 +9,7 @@ var artistImg = ""; // populated by initial API search, url used in artist IMG t
 var artistUrl = ""; // populated by initial API search, url used to open a spotify page with the artist
 
 
+
 $("#spotifyLogin").on("click", function () {
     // opens the spotify login and returns with a token
     var url = "https://accounts.spotify.com/authorize?";
@@ -47,9 +48,11 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
             var newBtnPlaylist = $("<button>");
             newBtnPlaylist.text("Get Playlist");
             newBtnPlaylist.attr("id","btnGetPlaylist");
+            newBtnPlaylist.attr("onclick","getPlaylist()");
             var newBtnTopTracks = $("<button>");
             newBtnTopTracks.text("Get Top Tracks");
             newBtnTopTracks.attr("id","btnGetTopTracks");
+            newBtnTopTracks.attr("onclick","getTopTracks()")
             newImg.attr("src", artistImg);
             newImg.attr("alt", "ArtistImage");
             newImg.attr("class", "artist");
@@ -60,8 +63,6 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
             newDiv.append(newP);
             newDiv.append(newBtnPlaylist);
             newDiv.append(newBtnTopTracks);
-            $("#btnGetPlaylist").on("click", getPlayList);
-            $("#btnGetTopTracks").on("click", getTopTracks);
             $("#artistInfo").append(newDiv);
             // if any artist is clicked, open it in a new page
             $(".artist").on("click", function () {
@@ -72,8 +73,8 @@ if (responseSpotify.length > 0) { // there is only a "hash" if spotify login ret
     });
 
 }
-
-function getPlayList() {
+function getPlaylist() {
+    alert ("clicked playlist - check out the console");
     // ajax call for playlists featuring this artist
     $.ajax({
         url: "https://api.spotify.com/v1/search?q=Ariana+Grande&type=playlist",
@@ -87,6 +88,7 @@ function getPlayList() {
 }
 
 function getTopTracks() {
+    alert ("clicked top tracks - check out the console")
     // ajax call for top tracks using artist ID and access token
     $.ajax({
         url: "https://api.spotify.com/v1/artists/" + artistId + "/top-tracks?country=US",
@@ -99,3 +101,4 @@ function getTopTracks() {
         }
     });
 }
+
