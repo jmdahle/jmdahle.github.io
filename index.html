@@ -1,210 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" text="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" text="text/css" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>John Dahle</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <!-- CSS Reset -->
+    <link rel='stylesheet' href='./assets/css/reset.css'>
+    <!-- icons -->
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <!-- Materialize compiled and minified CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Ubuntu&display=swap" rel="stylesheet">        <!-- local CSS -->
+    <link rel='stylesheet' href='./assets/css/style.css'>
+    <title>John Dahle / Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div id="title-container" class="container pl-0 pr-0">
-            <div class="row">
-                <div class="col-auto mr-auto">
-                    <h1 id="title-section">John Dahle</h1>
+    <!-- HEADER -->
+    <div id='page-header' class='row blue-grey darken-2 blue-grey-text text-lighten-4'>
+        <div class='col s12'>
+            <h3 id='main-title'><strong>John Dahle / </strong><span id='sub-title'>Project Portfolio</span> / <a href='#' data-target='mobile-nav' class='sidenav-trigger nav-dark top-nav'>More Info</a></h3>
+        </div>
+        <!-- <div class='col s12 m3 l3 right-align'>
+            <p class='top-nav'><a href='#' data-target='mobile-nav' class='sidenav-trigger nav-dark'>More Info</a></p>
+        </div> -->
+    </div>
+    <!-- BODY -->
+    <div class='row'>
+        <!-- SIDEBAR  -->
+        <div class='sidenav blue-grey lighten-2' id='mobile-nav'>
+            <div class='row valign-wrapper'>
+                <div class='col s4'>
+                    <img id='profile-img' class='responsive-img circle' src='./assets/images/dahle-square.png'>
                 </div>
-                <div class="col-auto">
-                    <!-- <nav class="navbar navbar-expand-md navbar-light bg-white justify-content-end">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="./index.html">About<span
-                                            class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contact.html">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                                </li>
-                            </ul>
+                <div class='col s8'>
+                    <h5>John Dahle</h5>
+                </div>
+            </div>
+            <div class='divider'></div>
+            <div class='section'>
+                <h5>Contact</h5>
+                <div class='row valign-wrapper sidebar-row'>
+                    <div class='col s4 m3 l2 right-align'>
+                        <p><a href='mailto:jmdahle@mac.com'><i class='material-icons indigo-text text-darken-4'>email</i></a></p>
+                    </div>
+                    <div class='col s8 m9 l10 left-align'>
+                        <p><a href='mailto:jmdahle@mac.com' class='nav-dark'>jmdahle@mac.com</a></p>
+                    </div>
+                </div>
+                <div class='row valign-wrapper sidebar-row'>
+                    <div class='col s4 m3 l2 right-align'>
+                        <p><a href='https://www.linkedin.com/in/johndahle/' target='_blank'><img class='responsive-img' id='li-profile-link' src='./assets/images/LI-In-Bug.png' alt='LinkedIn'></a></p>
+                    </div>
+                    <div class='col s8 m9 l10 left-align'>
+                        <p><a href='https://www.linkedin.com/in/johndahle/' target='_blank' class='nav-dark'>My LinkedIn profile</a></p>                        
+                    </div>
+                </div>
+                <div class='row valign-wrapper sidebar-row'>
+                        <div class='col s4 m3 l2 right-align'>
+                            <p><a href='./docs/john_dahle-resume-2019_JUN.pdf' target='_blank'><i class='material-icons indigo-text text-darken-4'>picture_as_pdf</i></a></p>
                         </div>
-                    </nav> -->
+                        <div class='col s8 m9 l10 left-align'>
+                            <p><a href='./docs/john_dahle-resume-2019_JUN.pdf' target='_blank' class='nav-dark'>My current resume</a></p>                        
+                        </div>
+                    </div>
+                </div>
+            <div class='divider'></div>
+            <div class='section'>
+                <h5>About Me</h5>
+                <p>I love problem-solving and distiling complex ideas into an easily-digestible presentation.</p>
+                <p>I think experience is most imporant when it is shared, and that often the most creative and innovative approaches come from new learners.  Active listening and communication are ctirical to that synthesis.</p>
+                <p>I believe in the value of life-long learning and that curiosity is as important as intelligence and aptitude.</p>
+                <p>Change is hard.  Pursuing change is inspired by a commitment to excellence.</p>
+            </div>
+            <div class='divider'></div>
+            <div class='section'>nbsp;</div>
+        </div>
+
+        <!-- Project Portfolio -->
+        <div class='col'>
+            <!-- First set of projects -->
+            <div class='row'>
+                <div class='col s12 m12 l6'>
+                    <!-- START portfolio project card -->
+                    <div class='card'>
+                        <div class='card-image'>
+                            <img src='./assets/images/chicago-trivia-game.png'>
+                            <!-- <span class='card-title'>Chicago Trivia</span> -->
+                        </div>
+                        <div class='card-content blue-grey lighten-5'>
+                            <h5 class='project-title'>Chicago Trivia</h5>
+                            <p>Chicago Trivia is a Chicago history-themed trivia game. Includes a count-down timer
+                                for answering the question within an allotted time. Question order and answer order
+                                are randomized.</p>
+                            <h5>Technologies Used</h5>
+                            <p>HTML, CSS, JavaScript, JQuery, Bootstrap</p>
+                        </div>
+                        <div class='section card-footer blue-grey darken-2'>
+                            <a href='https://jmdahle.github.io/TriviaGame/' class='nav-light' target='_blank'>Play the game</a>
+                            <a href='https://github.com/jmdahle/TriviaGame' class='nav-light' target='_blank'>View the code</a>
+                        </div>
+                    </div>
+                    <!-- END portfolio project card -->
+                </div>
+                <div class='col s12 m12 l6'>
+                    <!-- START portfolio project card -->
+                    <div class='card'>
+                        <div class='card-image'>
+                            <img src='./assets/images/showup-lollapalooza.png'>
+                            <!-- <span class='card-title'>showUP: Lollapalooza</span> -->
+                        </div>
+                        <div class='card-content blue-grey lighten-5'>
+                            <h5 class='project-title'>showUP: Lollapalooza</h5>
+                            <p>GROUP PROJECT: showUP: Lollapalooza. With a line-up of more than 100 acts,
+                                Lollapalooza is a festival that requires planning: to see the performers you’re
+                                there to see, and to open your ears to new music being presented. showUP helps the
+                                festival-goer do exactly that. Explore, listen, discover in advance. Make the most
+                                of your adventure!</p>
+                            <p>Choose artists from the lineup and explore their social media, and listen to Spotify
+                                playlists and top tracks to get ready to rock & rave in Grant Park!</p>
+                            <h5>Technologies Used</h5>
+                            <p>HTML, CSS, JavaScript, JQuery, API, OAuth, List.js</p>
+                        </div>
+                        <div class='section card-footer blue-grey darken-2'>
+                            <a href='https://jmdahle.github.io/showup/index.html' class='nav-light' target='_blank'>See the site</a>
+                            <a href='https://github.com/jmdahle/showup' class='nav-light' target='_blank'>View the code</a>
+                        </div>
+                    </div>
+                    <!-- END portfolio project card -->
+                </div>
+            </div>
+            <!-- Second set of projects -->
+            <div class='row'>
+                <div class='col s12 m12 l6'>
+                    <!-- START portfolio project card -->
+                    <div class='card'>
+                        <div class='card-image'>
+                            <img src='./assets/images/deathmatch-ragnarok.png'>
+                            <!-- <span class='card-title'>Death Match: Ragnarok</span> -->
+                        </div>
+                        <div class='card-content blue-grey lighten-5'>
+                            <h5 class='project-title'>Death Match: Ragnarok</h5>
+                            <p>Death Match: Ragnarok is an arena-style battle game based on a Norse mthology theme
+                                with characters from the Ragnarok story of the end of worlds.</p>
+                            <h5>Technologies Used</h5>
+                            <p>HTML, CSS, JavaScript, JQuery, Bootstrap</p>
+                        </div>
+                        <div class='section card-footer blue-grey darken-2'>
+                            <a href='https://jmdahle.github.io/deathmatch/index.html' class='nav-light' target='_blank'>Play the game</a>
+                            <a href='https://github.com/jmdahle/deathmatch' class='nav-light' target='_blank'>View the code</a>
+                        </div>
+                    </div>
+                    <!-- END portfolio project card -->
+                </div>
+                <div class='col s12 m12 l6'>
+                    <!-- START portfolio project card -->
+                    <div class='card'>
+                        <div class='card-image'>
+                            <img src='./assets/images/word-game.png'>
+                            <!-- <span class='card-title'>Halloween Hangman</span> -->
+                        </div>
+                        <div class='card-content blue-grey lighten-5'>
+                            <h5 class='project-title'>Halloween Hangman</h5>
+                            <p> Halloween Hangman is a gothic-horror-themed hangman-style word game incorporating
+                                basic javascript and utilizing a single object for the game functionality.</p>
+                            <h5>Technologies Used</h5>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class='section card-footer blue-grey darken-2'>
+                            <a href='https://jmdahle.github.io/Word-Guess-Game/index.html' class='nav-light' target='_blank'>Play the game</a>
+                            <a href='https://github.com/jmdahle/Word-Guess-Game' class='nav-light' target='_blank'>View the code</a>
+                        </div>
+                    </div>
+                    <!-- END portfolio project card -->
                 </div>
             </div>
         </div>
-    </header>
-    <main>
-        <div class="container">
-            <h1>Live Repositories</h1>
-            <!-- #9 Project -->
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="./assets/images/showup_thumb.png" class="mr-3 border" alt="Project Image">
-                </div>
-                <div class="col-md-7">
-                    <h5 class="mt-0">
-                        <span class="badge badge-primary">New</span>
-                        TrainTracker
-                        <a class="d-inline-flex nav-link text-primary" href="./showup/index.html">Link</a>
-                    </h5>
-                    GROUP PROJECT: showUP: Lollapalooza.  With a line-up of more than 100 acts, Lollapalooza is a festival that requires planning: to see the performers you’re there to see, and to open your ears to new music being presented. showUP helps the festival-goer do exactly that. Explore, listen, discover in advance. Make the most of your adventure!
+    </div>
 
-                    Choose artists from the lineup and explore their social media, and listen to Spotify playlists and top tracks to get ready to rock & rave in Grant Park!
-                </div>
-            </div>
-            <hr>
-        <!-- #8 Project -->
-            <div class="row">
-                    <div class="col-md-5">
-                        <img src="./assets/images/traintracker.png" class="mr-3 border" alt="Project Image">
-                    </div>
-                    <div class="col-md-7">
-                        <h5 class="mt-0">
-                            <span class="badge badge-primary">New</span>
-                            TrainTracker
-                            <a class="d-inline-flex nav-link text-primary" href="./TrainTracker/index.html">Link</a>
-                        </h5>
-                        Exploring persistent data, API calls, and authenticatin using Firebase.  TrainTracker shows a schedule of daily train arrivals, updating every minute so you won't be late!  As an administrator (log in using Google authentication) you can add new trains to the schedule or modify select details of existing trains.
-                    </div>
-                </div>
-                <hr>
-            <!-- #7 Project -->
-            <div class="row">
-                    <div class="col-md-5">
-                        <img src="./assets/images/GIFTastic.png" class="mr-3 border" alt="Project Image">
-                    </div>
-                    <div class="col-md-7">
-                        <h5 class="mt-0">
-                            <span class="badge badge-primary">New</span>
-                            GIFTastic
-                            <a class="d-inline-flex nav-link text-primary" href="./GIFTastic/index.html">Link</a>
-                        </h5>
-                        A fun search for animated GIFs from GIPHY.com using an API call.  Add your own search terms and explore the meme-verse.
-                    </div>
-                </div>
-                <hr>
-            <!-- #6 Project -->
-            <div class="row">
-                    <div class="col-md-5">
-                        <img src="./assets/images/chicago-trivia-game.png" class="mr-3 border" alt="Project Image">
-                    </div>
-                    <div class="col-md-7">
-                        <h5 class="mt-0">
-                            <span class="badge badge-primary">New</span>
-                            Chicago Trivia
-                            <a class="d-inline-flex nav-link text-primary" href="./TriviaGame/index.html">Link</a>
-                        </h5>
-                        A Chicago history-themed trivia game.  Includes a count-down timer for answering the question within an allotted time.  Question order and answer order are randomized.
-                    </div>
-                </div>
-                <hr>
-            <!-- #5 Project -->
-            <div class="row">
-                    <div class="col-md-5">
-                        <img src="./assets/images/ragnarok-game.png" class="mr-3 border" alt="Project Image">
-                    </div>
-                    <div class="col-md-7">
-                        <h5 class="mt-0">
-                            <span class="badge badge-success">Complete</span>
-                            Ragnarok Death Match
-                            <a class="d-inline-flex nav-link text-primary" href="./unit-4-game/index.html">Link</a>
-                        </h5>
-                        An arena-style battle game based on Star Wars RPG game demo.  Game uses a Norse mthology theme with characters from the Ragnarok story of the end of worlds.
-                    </div>
-                </div>
-                <hr>
-                <!-- #4 Project -->
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="./assets/images/Word-Guess-Game.png" class="mr-3 border" alt="Project Image">
-                </div>
-                <div class="col-md-7">
-                    <h5 class="mt-0">
-                        <span class="badge badge-success">Complete</span>
-                        Word Game - Hangman!
-                        <a class="d-inline-flex nav-link text-primary" href="./Word-Guess-Game/index.html">Link</a>
-                    </h5>
-                    A gothic-horror-themed hangman-style word game incorporating basic javascript and utilizing a single
-                    object for the game functionality.
-                </div>
-            </div>
-            <hr>
-            <!-- #3 Project -->
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="./assets/images/Responsive-Portfolio-thumb.png" class="mr-3 border"
-                        alt="Responsive-Portfolio">
-                </div>
-                <div class="col-md-7">
-                    <h5 class="mt-0">
-                        <span class="badge badge-success">Complete</span>
-                        Responsive-Portfolio
-                        <a class="d-inline-flex nav-link text-primary" href="./Responsive-Portfolio/index.html">Link</a>
-                    </h5>
-                    Repeating the Basic-Portfolio exercise using @media CSS to create a responsive page.
-                </div>
-            </div>
-            <hr>
+    <!-- JQuery -->
+    <script src='https://code.jquery.com/jquery-3.4.1.js'
+        integrity='sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=' crossorigin='anonymous'></script>
+    <!-- Materialze compiled and minified JavaScript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
 
-            <!-- #2 Project -->
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="./assets/images/Bootstrap-Portfolio-thumb.png" class="mr-3 border"
-                        alt="Bootstrap-Portfolio">
-                </div>
-                <div class="col-md-7">
-                    <h5 class="mt-0">
-                        <span class="badge badge-success">Complete</span>
-                        Bootstrap-Portfolio
-                        <a class="d-inline-flex nav-link text-primary" href="./Bootstrap-Portfolio/index.html">Link</a>
-                    </h5>
-                    Repeating the Basic-Portfolio exercise using Bootstrap, resulting in a responsive page.
-                </div>
-            </div>
-            <hr>
-            <!-- #1 Project -->
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="./assets/images/Basic-Portfolio-thumb.png" class="mr-3 border" alt="Basic-Portfolio">
-                </div>
-                <div class="col-md-7">
-                    <h5 class="mt-0">
-                        <span class="badge badge-success">Complete</span>
-                        Basic-Portfolio
-                        <a class="d-inline-flex nav-link text-primary" href="./Basic-Portfolio/index.html">Link</a>
-                    </h5>
-                    An early exercise in separating markup from styling and working on CSS layout and positioning.
-                    Initially
-                    completed 2019-04-27.
-                </div>
-            </div>
-            <hr>
-        </div>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!-- for sidenav  -->
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
 
 </html>
