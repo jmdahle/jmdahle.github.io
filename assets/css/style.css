@@ -67,6 +67,10 @@ p {
     padding-left: 24px;
 }
 
+.card {
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 600px) {
     .top-nav {
         margin-top: 0px;
